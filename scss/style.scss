@@ -49,7 +49,7 @@ body {
     transform: translateX(-50%);
     @media screen and (max-width: 576px) {
       height: 20px;
-      bottom: 3%;
+      bottom: 2%;
     }
   }
 }
@@ -80,6 +80,9 @@ body {
     transform: translateX(-50%);
     text-align: center;
     background-color: $white;
+    @media screen and (max-width: 576px) {
+      width: 87%;
+    }
   }
   &__text {
     @include Text(16px, $black);
@@ -109,6 +112,9 @@ body {
   width: 25%;
   height: 2px;
   background-color: $white;
+  @media screen and (max-width: 567px) {
+    width: 8%;
+  }
 }
 .left-border {
   left: 0;
@@ -153,7 +159,7 @@ body {
     opacity: 0.6;
   }
   &__block:hover &__title {
-    transform: scale(1.2);
+    transform: scale(1.1);
   }
   &__block_theme_topworkz {
     background: url(../img/topworkz.jpg) no-repeat;
@@ -198,6 +204,9 @@ body {
       flex-basis: 29%;
       width: 100%;
       margin-bottom: 10px;
+    }
+    @media screen and (max-width: 567px) {
+      padding: 5%;
     }
   }
   &__title {

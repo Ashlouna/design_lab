@@ -429,7 +429,7 @@ body {
 @media screen and (max-width: 576px) {
   .main__scroll {
     height: 20px;
-    bottom: 3%;
+    bottom: 2%;
   }
 }
 
@@ -470,6 +470,11 @@ body {
   text-align: center;
   background-color: #fff;
 }
+@media screen and (max-width: 576px) {
+  .article__title {
+    width: 87%;
+  }
+}
 .article__text {
   font-family: "Lato light", sans-serif;
   font-size: 16px;
@@ -503,6 +508,12 @@ body {
   width: 25%;
   height: 2px;
   background-color: #fff;
+}
+@media screen and (max-width: 567px) {
+  .left-border,
+.right-border {
+    width: 8%;
+  }
 }
 
 .left-border {
@@ -564,7 +575,7 @@ body {
   opacity: 0.6;
 }
 .gallery__block:hover .gallery__title {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .gallery__block_theme_topworkz {
   background: url(../img/topworkz.jpg) no-repeat;
@@ -613,6 +624,11 @@ body {
     flex-basis: 29%;
     width: 100%;
     margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 567px) {
+  .gallery__block {
+    padding: 5%;
   }
 }
 .gallery__title {
