@@ -1,0 +1,31 @@
+@mixin Title($font-size, $color) {
+  font-family: $title-font;
+  font-size: $font-size;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-align: center;
+}
+@mixin Text($font-size, $color) {
+  font-family: $text-font;
+  font-size: $font-size;
+  color: $color;
+  text-align: center;
+  line-height: 1.8;
+}
+@mixin subTitle($font-size, $color) {
+  font-family: $subtitle-font;
+  font-size: $font-size;
+  color: $color;
+  text-transform: uppercase;
+  text-align: center;
+}
+@mixin Btn($bg-color, $color) {
+  background-color: $bg-color;
+  color: $color;
+  max-width: 390px;
+  width: 75%;
+  height: 55px;
+  outline: none;
+  border: none;
+}
