@@ -12,10 +12,10 @@ body {
 .main {
   background: url(../img/hero-bg.jpg) no-repeat;
   background-size: cover;
-  @media screen and (max-width: 1200px) {
+  @include media("max", "xl") {
     background-position-x: 94%;
   }
-  @media screen and (max-width: 768px) {
+  @include media("max", "md") {
     background-position-x: 80%;
   }
   height: 100vh;
@@ -33,12 +33,18 @@ body {
     @include Title($biggest-title, $white);
     width: 100%;
     text-align: center;
+    @include media("max", "xs") {
+      margin: 10px 0;
+    }
   }
   &__subtitle {
     @include subTitle(15px, $white);
     line-height: 1.5;
     letter-spacing: 2px;
     text-align: center;
+    @include media("max", "xs") {
+      line-height: 1.2;
+    }
   }
   &__scroll {
     height: 40px;
@@ -47,7 +53,7 @@ body {
     left: 50%;
     fill: $white;
     transform: translateX(-50%);
-    @media screen and (max-width: 576px) {
+    @include media("max", "sm") {
       height: 20px;
       bottom: 2%;
     }
@@ -67,7 +73,7 @@ body {
   position: relative;
   border: 2px solid $black;
   padding: 72px 10% 0 10%;
-  @media screen and (max-width: 768px) {
+  @include media("max", "md") {
     width: 93%;
   }
   &__title {
@@ -80,7 +86,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     background-color: $white;
-    @media screen and (max-width: 576px) {
+    @include media("max", "sm") {
       width: 87%;
     }
   }
@@ -112,7 +118,7 @@ body {
   width: 25%;
   height: 2px;
   background-color: $white;
-  @media screen and (max-width: 567px) {
+  @include media("max", "sm") {
     width: 8%;
   }
 }
@@ -142,7 +148,7 @@ body {
 .gallery {
   width: 100%;
   height: 480px;
-  @media screen and (max-width: 768px) {
+  @include media("max", "md") {
     height: 750px;
   }
   &__row {
@@ -150,7 +156,7 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @media screen and (max-width: 768px) {
+    @include media("max", "md") {
       flex-direction: column;
     }
   }
@@ -197,15 +203,15 @@ body {
     align-items: flex-end;
     padding: 0 0 2% 2%;
     transition: opacity 0.4s;
-    @media screen and (max-width: 992px) {
+    @include media("max", "lg") {
       flex-basis: 33%;
     }
-    @media screen and (max-width: 768px) {
+    @include media("max", "md") {
       flex-basis: 29%;
       width: 100%;
       margin-bottom: 10px;
     }
-    @media screen and (max-width: 567px) {
+    @include media("max", "sm") {
       padding: 5%;
     }
   }

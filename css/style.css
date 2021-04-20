@@ -381,12 +381,12 @@ body {
   height: 100vh;
   position: relative;
 }
-@media screen and (max-width: 1200px) {
+@media only screen and (max-width: 1200px) {
   .main {
     background-position-x: 94%;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .main {
     background-position-x: 80%;
   }
@@ -408,6 +408,11 @@ body {
   width: 100%;
   text-align: center;
 }
+@media only screen and (max-width: 389px) {
+  .main__title {
+    margin: 10px 0;
+  }
+}
 .main__subtitle {
   font-family: "Lato regular", sans-serif;
   font-size: 15px;
@@ -418,6 +423,11 @@ body {
   letter-spacing: 2px;
   text-align: center;
 }
+@media only screen and (max-width: 389px) {
+  .main__subtitle {
+    line-height: 1.2;
+  }
+}
 .main__scroll {
   height: 40px;
   position: absolute;
@@ -426,7 +436,7 @@ body {
   fill: #fff;
   transform: translateX(-50%);
 }
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .main__scroll {
     height: 20px;
     bottom: 2%;
@@ -449,7 +459,7 @@ body {
   border: 2px solid #3c3c3c;
   padding: 72px 10% 0 10%;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .article {
     width: 93%;
   }
@@ -470,7 +480,7 @@ body {
   text-align: center;
   background-color: #fff;
 }
-@media screen and (max-width: 576px) {
+@media only screen and (max-width: 576px) {
   .article__title {
     width: 87%;
   }
@@ -509,7 +519,7 @@ body {
   height: 2px;
   background-color: #fff;
 }
-@media screen and (max-width: 567px) {
+@media only screen and (max-width: 576px) {
   .left-border,
 .right-border {
     width: 8%;
@@ -555,7 +565,7 @@ body {
   width: 100%;
   height: 480px;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gallery {
     height: 750px;
   }
@@ -566,7 +576,7 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gallery__row {
     flex-direction: column;
   }
@@ -614,19 +624,19 @@ body {
   padding: 0 0 2% 2%;
   transition: opacity 0.4s;
 }
-@media screen and (max-width: 992px) {
+@media only screen and (max-width: 992px) {
   .gallery__block {
     flex-basis: 33%;
   }
 }
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   .gallery__block {
     flex-basis: 29%;
     width: 100%;
     margin-bottom: 10px;
   }
 }
-@media screen and (max-width: 567px) {
+@media only screen and (max-width: 576px) {
   .gallery__block {
     padding: 5%;
   }
